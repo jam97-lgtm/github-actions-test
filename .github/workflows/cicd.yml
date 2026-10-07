@@ -1,6 +1,7 @@
 # This is the name of the workflow that will be displayed in the Actions tab
 name: CICD
 
+# Manual click (deliver) workflow whenever the user needs it.
 on:
   workflow_dispatch:
 
