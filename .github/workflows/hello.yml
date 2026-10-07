@@ -3,7 +3,8 @@ name: Hello Workflow
 
 # Runs on an automatic trigger whenever a change is pushed to the branch[deployment]
 on:
-  workflow_dispatch: 
+  push:
+    branches: [main] 
     
 # These are jobs inside the workflow
 jobs:
