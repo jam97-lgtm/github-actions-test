@@ -1,4 +1,4 @@
-.github/workflows/docker-build-push.ymlname: Docker Build & Push
+name: Docker Build & Push
 
 on:
   push:
