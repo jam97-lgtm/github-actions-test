@@ -21,7 +21,8 @@ jobs:
       - name: Build & push to Docker Hub
         uses: docker/build-push-action@v6
         with:
-          context: .github/workflows/docker-build-push.yml
+          context: .
+          file: ./docker/Dockerfile
           push: true
           tags: |
               ${{ vars.DOCKERHUB_USER }}/github-actions-app:${{ github.ref_name }}
