@@ -1,4 +1,4 @@
-name: Docker Build & Push
+.github/workflows/docker-build-push.ymlname: Docker Build & Push
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
       - name: Build & push to Docker Hub
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: .github/workflows/docker-build-push.yml
           push: true
           tags: |
               ${{ vars.DOCKERHUB_USER }}/github-actions-app:${{ github.ref_name }}
